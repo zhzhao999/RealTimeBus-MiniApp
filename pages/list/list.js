@@ -34,10 +34,10 @@ Page({
     that.setData({
       loading: false
     })
-    api.post(`${api.URL}/bus/findListByName`, {
+    api.post(`${api.URL}/bus/findListByName`, api.json2Form({
       type: '',
       name: that.data.name
-    }).then(res => {
+    })).then(res => {
       that.setData({
         lists: res.datas,
         loading: true

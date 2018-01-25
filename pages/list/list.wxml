@@ -1,8 +1,8 @@
 <!--list.wxml-->
 <view class="search-container">
-  <input type="text" placeholder="搜索公交线路、车站" bindinput="setname"></input>
+  <input type="text" placeholder="搜索公交线路、车站" bindinput="setname" focus="true" confirm-type="search"></input>
   <icon class="iconfont icon-fangdajing" bindtap="btnClick"></icon>
-  <navigator url="../index/index" class="back">取消</navigator>
+  <navigator open-type="navigateBack" class="back">取消</navigator>
 </view>
 <view class="lists-container">
   <block wx:for="{{lists}}">

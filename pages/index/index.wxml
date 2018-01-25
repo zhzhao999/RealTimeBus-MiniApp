@@ -1,6 +1,6 @@
 <view class="search-container">
   <navigator url="../list/list" class="search-input">
-    <input type="text" placeholder="搜索公交线路、车站"></input>
+    <input type="text" placeholder="搜索公交线路、车站" disabled="true"></input>
   </navigator>
   <icon class="iconfont icon-fangdajing"></icon>
 </view>
