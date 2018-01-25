@@ -1,0 +1,16 @@
+<!--list.wxml-->
+<view class="search-container">
+  <input type="text" placeholder="搜索公交线路、车站" bindinput="setname"></input>
+  <icon class="iconfont icon-fangdajing" bindtap="btnClick"></icon>
+  <navigator url="../index/index" class="back">取消</navigator>
+</view>
+<view class="lists-container">
+  <block wx:for="{{lists}}">
+    <view-item>
+        <text class="text">{{item.lineName}}</text>
+    </view-item>
+  </block>
+</view>
+<loading hidden="{{loading}}">
+  loading...
+</loading>

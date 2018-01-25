@@ -4,26 +4,35 @@
   color: #FFF;
   height: 80rpx;
   line-height: 80rpx;
-  padding: 22rpx 100rpx 0;
+  padding: 22rpx 10rpx 0;
   z-index: 100;
+  display: flex;
 }
-.search-container .search-input {
+.search-container input{
+  padding-left: 60rpx;
   width: 100%;
   height: 56rpx;
   background: #fff;
   border: 1rpx solid #eaeaea;
   border-radius: 50rpx;
+  color: #333;
   font-size: 30rpx;
-}
-.search-container .search-input input{
-  padding-left: 60rpx;
-  height: 56rpx;
 }
 .search-container icon {
   position: absolute;
   top: 12rpx;
-  left: 120rpx;
+  left: 30rpx;
   color: #aaa;
+  z-index: 10;
+}
+.search-container .back {
+  padding-left: 20rpx;
+  width: 100rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #fff;
+  font-size: 30rpx;
+  letter-spacing: 3rpx;
   z-index: 10;
 }
 

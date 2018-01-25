@@ -1,12 +1,14 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/list/list",
     "pages/logs/logs"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "公交实时查询",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
   }
 }
