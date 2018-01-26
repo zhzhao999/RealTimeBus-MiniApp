@@ -1,9 +1,10 @@
 <!--list.wxml-->
 <view class="search-container">
-  <input type="text" placeholder="搜索公交线路、车站" bindinput="setname" focus="true" confirm-type="search"></input>
-  <icon class="iconfont icon-fangdajing" bindtap="btnClick"></icon>
-  <navigator open-type="navigateBack" class="back">取消</navigator>
+  <input type="text" placeholder="搜索公交线路、车站" bindinput="setname" focus="true"></input>
+  <icon class="iconfont icon-fangdajing"></icon>
+  <text class="back" bindtap="btnClick">搜索</text>
 </view>
+
 <view class="lists-container">
   <block wx:for="{{lists}}">
     <view-item>
@@ -11,6 +12,7 @@
     </view-item>
   </block>
 </view>
+
 <loading hidden="{{loading}}">
   loading...
 </loading>

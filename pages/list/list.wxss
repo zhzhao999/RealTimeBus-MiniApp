@@ -1,14 +1,16 @@
 .search-container {
-  position: relative;
-  background-color: #398bfb;
-  color: #FFF;
-  height: 80rpx;
+  width: 100%;
+  height: 102rpx;
   line-height: 80rpx;
-  padding: 22rpx 10rpx 0;
+  background-color: #398bfb;
   z-index: 100;
   display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 .search-container input{
+  margin: 22rpx 0 0 10rpx;
   padding-left: 60rpx;
   width: 100%;
   height: 56rpx;
@@ -27,9 +29,8 @@
 }
 .search-container .back {
   padding-left: 20rpx;
-  width: 100rpx;
-  height: 56rpx;
-  line-height: 56rpx;
+  width: 110rpx;
+  line-height: 102rpx;
   color: #fff;
   font-size: 30rpx;
   letter-spacing: 3rpx;
@@ -37,7 +38,7 @@
 }
 
 .lists-container{
-  padding: 20rpx;
+  padding: 102rpx 20rpx 0rpx;
   display: flex;
   flex-direction: column;
 }
