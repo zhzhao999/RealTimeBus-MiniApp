@@ -5,9 +5,7 @@
   background-color: #398bfb;
   z-index: 100;
   display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: relative;
 }
 .search-container input{
   margin: 22rpx 0 0 10rpx;

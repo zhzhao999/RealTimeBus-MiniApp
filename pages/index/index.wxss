@@ -6,9 +6,7 @@
   color: #FFF;
   z-index: 100;
   display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: relative;
 }
 .search-container .search-input {
   margin: 22rpx 100rpx 10rpx;
@@ -31,24 +29,16 @@
   z-index: 10;
 }
 
-.lists-container{
-  padding: 20rpx;
-  display: flex;
-  flex-direction: column;
-}
-
 .tab-h{
   height: 80rpx;
   width: 100%;
-  line-height: 80rpx;
+  line-height: 76rpx;
   background: #F7F7F7;
+  border-bottom: 1rpx solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 32rpx;
   display: flex;
-  position: fixed;
-  top: 102rpx; 
-  left: 0; 
   z-index: 99;
 }
 .tab-item{
@@ -63,7 +53,7 @@
 .tab-item.active:after{ 
   content: "";
   display: block;
-  height: 8rpx;
+  height: 4rpx;
   width: 100%;
   background: #398bfb;
   position: absolute; 
@@ -71,60 +61,58 @@
   left: 5rpx;
   border-radius: 16rpx;
 }
-.item-ans{ 
-  width: 100%;
-  display: flex; 
-  flex-grow: row no-wrap;
-  justify-content: space-between; 
-  padding: 30rpx;
-  box-sizing: border-box; 
-  height: 180rpx;
-  align-items: center;
-  border-bottom: 1px solid #F2F2F2;
-}
-.avatar{
-  width: 100rpx;
-  height: 100rpx;
-  position: relative;
-  padding-right: 30rpx;
-}
-.avatar .img{
-  width: 100%;
-  height: 100%;
-}
-.avatar .doyen{
-  width: 40rpx;
-  height: 40rpx;
-  position: absolute;
-  bottom: -2px;
-  right: 20rpx;
-}
-.expertInfo{
-  font-size: 12px;
-  flex-grow: 2;
-  color: #B0B0B0;
-  line-height: 1.5em;
-}
-.expertInfo .name{
-  font-size: 16px;
-  color:#000;
-  margin-bottom: 6px;
-}
-.askBtn{ 
-  width: 120rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  text-align: center;
-  font-size: 14px; 
-  border-radius: 60rpx;
-  border: 1px solid #4675F9; 
-  color:#4675F9;
-}
 .tab-content{
-  margin-top: 182rpx;
+  margin-top: 32rpx;
 }
 .scoll-h{
-  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+.item-ans{
+  margin: 0 25rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #eaeaea;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+.item-lru{
+  display: flex;
+}
+.item-lru .car-icon{
+  margin-top: 25rpx;
+  margin-right: 17rpx;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  background-color: #398bfb;
+  border-radius: 50%;
+  position: relative;
+}
+.item-lru .car-icon icon{
+  color: #fff;
+  font-size: 27rpx;
+  position: absolute;
+  right: 9rpx;
+  bottom: -24rpx;
+}
+.item-lru text{
+  color: #000;
+  font-size: 30rpx;
+}
+.item-ans .icon-cha{
+  color: #ccc;
+  position: absolute;
+  right: 0;
+}
+
+.empty-btn{
+  display: block;
+  line-height: 90rpx;
+  text-align: center;
+  color: #666;
+  font-size: 30rpx;
 }
 
 /* .tab-h{height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #F7F7F7; font-size: 16px; white-space: nowrap;position: fixed;top: 102rpx; left: 0; z-index: 99;}

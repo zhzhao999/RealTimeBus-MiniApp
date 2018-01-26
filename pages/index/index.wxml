@@ -11,21 +11,45 @@
         <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">收藏</view>
     </view>
     <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
-        <swiper-item wx:for="{{[0,1]}}">
+        <swiper-item>
             <scroll-view scroll-y="true" class="scoll-h" >
-                <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this">
+                <block>
                     <view class="item-ans">
-                        <view class="avatar">
-                            <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+                      <navigator class="item-lru">
+                        <view class="car-icon">
+                          <icon class="iconfont icon-gongjiaochezhan"></icon>
                         </view>
-                        <view class="expertInfo">
-                            <view class="name">欢颜</view>
-                            <view class="tag">知名情感博主</view>
-                            <view class="answerHistory">134个回答，2234人听过 </view>
+                        <text>海淀黄庄地铁站</text>
+                      </navigator>
+                      <icon class="iconfont icon-cha" bindtap="deleteThis"></icon>
+                    </view>
+                    <view class="item-ans">
+                      <navigator class="item-lru">
+                        <view class="car-icon">
+                          <icon class="iconfont icon-gongjiaoche"></icon>
                         </view>
-                        <navigator url="/pages/askExpert/expertDetail" class="askBtn">问TA</navigator>
+                        <text>607路</text>
+                      </navigator>
+                      <icon class="iconfont icon-cha" bindtap="deleteThis"></icon>
                     </view>
                 </block>
+                <text class="empty-btn" bindtap="emptyLru">清空使用记录</text>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block>
+                    <view class="item-ans">
+                      <navigator class="item-lru">
+                        <view class="car-icon">
+                          <icon class="iconfont icon-gongjiaoche"></icon>
+                        </view>
+                        <text>海淀黄庄地铁站</text>
+                      </navigator>
+                      <icon class="iconfont icon-cha" bindtap="deleteThis"></icon>
+                    </view>
+                </block>
+                <text class="empty-btn" bindtap="emptyLru">清空使用记录</text>
             </scroll-view>
         </swiper-item>
     </swiper>

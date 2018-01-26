@@ -1,5 +1,5 @@
 //list.js
-var api = require('../../utils/api.js')
+const api = require('../../utils/api.js')
 
 Page({
   data: {
@@ -15,7 +15,7 @@ Page({
   },
   // 点击标题切换当前页时改变样式
   swichNav:function(e){
-      var cur=e.target.dataset.current;
+      const cur=e.target.dataset.current;
       if(this.data.currentTaB==cur){
         return false;
       }else{
@@ -25,7 +25,7 @@ Page({
       }
   },
   onLoad: function() {  
-      var that = this; 
+      const that = this; 
       //  高度自适应
       wx.getSystemInfo({
           success: function( res ) {
@@ -39,6 +39,8 @@ Page({
               })
           }  
       })
+
+
   },
   onPullDownRefresh () {
     wx.stopPullDownRefresh()

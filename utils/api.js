@@ -2,7 +2,7 @@
 import Promise from './es6-promise.min'
 
 module.exports = {
-  URL: 'https://www.zhzhao.top',
+  URL: 'https://zhzhao.top',
 
   get (url) {
     return new Promise((resolve, reject) => {
