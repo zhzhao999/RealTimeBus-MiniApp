@@ -8,7 +8,15 @@
 <view class="lists-container">
   <block wx:for="{{lists}}">
     <view-item>
-        <text class="text">{{item.lineName}}</text>
+        <!-- <text class="text">{{item.lineName}}</text> -->
+        <view class="item-ans">
+          <navigator class="item-lru" url="../detail/detail?key={{item.lineKey}}">
+            <view class="car-icon">
+              <icon class="iconfont icon-gongjiaoche"></icon>
+            </view>
+            <text>{{item.lineName}}</text>
+          </navigator>
+        </view>
     </view-item>
   </block>
 </view>

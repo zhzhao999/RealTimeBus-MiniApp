@@ -61,27 +61,25 @@
   left: 5rpx;
   border-radius: 16rpx;
 }
-.tab-content{
-  margin-top: 32rpx;
-}
 .scoll-h{
   width: 100%;
   background-color: #fff;
 }
 .item-ans{
   margin: 0 25rpx;
-  height: 90rpx;
-  line-height: 90rpx;
-  border-bottom: 1rpx solid #eaeaea;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #e0e0e0;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
 }
 .item-lru{
   display: flex;
+  width: 100%;
 }
 .item-lru .car-icon{
-  margin-top: 25rpx;
+  margin-top: 30rpx;
   margin-right: 17rpx;
   width: 40rpx;
   height: 40rpx;
@@ -95,7 +93,7 @@
   font-size: 27rpx;
   position: absolute;
   right: 9rpx;
-  bottom: -24rpx;
+  bottom: -26rpx;
 }
 .item-lru text{
   color: #000;
@@ -103,8 +101,6 @@
 }
 .item-ans .icon-cha{
   color: #ccc;
-  position: absolute;
-  right: 0;
 }
 
 .empty-btn{

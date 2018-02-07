@@ -1,8 +1,11 @@
 //list.js
-const api = require('../../utils/api.js')
+//获取应用实例
+var app = getApp()
+var api = require('../../utils/api.js')
 
 Page({
   data: {
+    id: null, //用户id
     lists: {},
     winHeight:"",//窗口高度
     currentTab:0 //预设当前项的值
@@ -15,7 +18,7 @@ Page({
   },
   // 点击标题切换当前页时改变样式
   swichNav:function(e){
-      const cur=e.target.dataset.current;
+      var cur=e.target.dataset.current;
       if(this.data.currentTaB==cur){
         return false;
       }else{
@@ -25,7 +28,7 @@ Page({
       }
   },
   onLoad: function() {  
-      const that = this; 
+      var that = this; 
       //  高度自适应
       wx.getSystemInfo({
           success: function( res ) {
@@ -39,6 +42,12 @@ Page({
               })
           }  
       })
+
+      this.setData({
+        id: wx.getStorageSync('id')
+      })
+
+      console.log(this.data.id)
 
 
   },

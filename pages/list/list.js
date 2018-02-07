@@ -14,7 +14,7 @@ Page({
     })
   },
   btnClick () {
-    const that = this;
+    var that = this;
     that.setData({
       loading: false
     })
